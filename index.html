@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+
+
+    <div class="container px-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title pt-5 pb-4">
+                    <h3 class="h1 fw-light text-center">Bookmarker</h3>
+                </div>
+            </div>
+        </div>
+
+    <hr class="horizontal">
+        <div class="row ">
+            <div class="col-md-12 py-2">
+                <div class="title-center text-center">
+                    <h2 class="h6 fw-normal"><i class="fa-solid fa-bookmark mx-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark mx-1"></i></h2>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="inputs px-2">
+                    <p class="fw-bolder py-2"><i class="fa-solid fa-book-bookmark pe-3"></i>Site Name</p>
+                    <input oninput="validateInput(this)" id="bookName" class="form-control form-control-sm rounded-2" type="text" placeholder="Bookmark Name" aria-label=".form-control-sm example">
+                    <p class="fw-bolder pb-2 pt-4"><i class="fa-solid fa-link pe-2"></i>Site URL</p>
+                    <input oninput="validateInput(this)" id="webUrl" class="form-control form-control-sm rounded-2" type="url" placeholder="Website URL" aria-label=".form-control-sm example">
+                </div>
+                <div class="text-center py-3">
+                    <button onclick="addSubmit();" id="subBtn" class="rounded-2">Submit</button>
+                    <button onclick="updateLink();" id="updateBtn" class="rounded-2 d-none ">Update</button>
+                </div>
+            </div>
+        </div>
+        <hr class="horizontal">
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Update</th>
+                    <th class="text-capitalize">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

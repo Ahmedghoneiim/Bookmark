@@ -1,0 +1,92 @@
+body
+{
+    background-color: #F7ECDE;
+}
+
+.title h3
+{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+}
+.title h3::before
+{
+    content: ' ';
+    background-color: #FEC260;
+    width: 264px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    transition: 0.3s;
+
+}
+.title h3:hover::before
+{
+    content: ' ';
+    background-color: #FEC260;
+    width: 264px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-20px);
+
+}
+
+.title-center
+{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);    
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.title-center h2
+{
+    font-size: 25px;
+}
+.inputs p
+{
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0;
+    
+}
+.inputs input
+{
+    font-size: 20px;
+}
+#subBtn
+{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #D1512D;
+    color: white;
+    padding: 3px 45px;
+    border: 2px solid #D1512D;
+}
+#subBtn:hover
+{
+    background-color: #BB4120;
+}
+#updateBtn
+{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #FFC107;
+    color: white;
+    padding: 3px 45px;
+    border: 2px solid #FFC107;
+}
+#updateBtn:hover
+{
+    background-color: #edb408f8;
+}
+.horizontal
+{
+    border-top: 2px dotted #000000;
+}
+.form-control:focus
+{
+    border-color: #D1512D;
+    box-shadow: 0 0 0 0.25rem rgba(243, 146, 11, 0.205);
+}
